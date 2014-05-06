@@ -4,6 +4,15 @@ This module provides quick access to the [Gravatar](http://en.gravatar.com/) ser
 
 Setup
 ------
+
+Install with [modman](https://github.com/colinmollenhour/modman)
+
+    $ cd /path/to/magento
+    $ modman init
+    $ modman clone https://github.com/vbuck/magento-gravatar.git
+
+or
+
 Download the source, add it to your Magento base directory, clear your cache, and start using it! Be sure to check the Modules Output section of your system configuration to be sure that module has been loaded.
 
 How to Use
