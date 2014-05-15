@@ -213,8 +213,13 @@ class Rootd_Gravatar_Model_Gravatar extends Mage_Core_Model_Abstract
 	 * @param 	string $hashEmail
 	 * @return 	string
 	 */
-	public function buildGravatarURL($email, $hashEmail = true) 
+	public function buildGravatarURL($email = '', $hashEmail = true) 
 	{
+		if(!$email)
+		{
+			return '';
+		}
+
 		if($this->usingSecureImages()) 
 		{
 			$url = self::HTTPS_URL;
@@ -276,8 +281,13 @@ class Rootd_Gravatar_Model_Gravatar extends Mage_Core_Model_Abstract
 	/**
 	 * @see Rootd_Gravatar_Model_Gravatar::buildGravatarURL()
 	 */
-	public function getUrl($email, $hashEmail = true) 
+	public function getUrl($email = '', $hashEmail = true) 
 	{
+		if(!$email)
+		{
+			return '';
+		}
+
 		return $this->buildGravatarURL($email, $hashEmail);
 	}
 
