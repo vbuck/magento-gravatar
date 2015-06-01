@@ -1,0 +1,9 @@
+{
+  "name": "rootd/gravatar",
+  "type": "magento-module",
+  "description": "Magento module to provide quick access to the Gravatar service.",
+  "homepage": "https://github.com/vbuck/magento-gravatar",
+  "require": {
+    "magento-hackathon/magento-composer-installer": "*"
+  }
+}
